@@ -1,0 +1,30 @@
+<!-- /views/wrapper.erb -->
+
+<html>
+
+  <style>
+    .navbar {
+      justify-content: space-between;
+    }
+  </style>
+
+    <div class="navbar">
+    <div><a href="/">Home</a></div>
+    <div><a href="/2/6">2d6</a></div>
+    <div><a href="/2/10">2d10</a></div>
+    <div><a href="/1/20">1d20</a></div>
+    <div><a href="/5/4">4d5</a></div>
+    </div>
+
+  <%= yield %>
+
+<h1>Dice Roll</h1>
+
+
+    <li><a href="/2/6">Roll two 6-sided dice</a></li>
+    <li><a href="/2/10">Roll two 10-sided dice</a></li>
+    <li><a href="/1/20">Roll one 20-sided die</a></li>
+    <li><a href="/5/4">Roll four 5-sided dice</a></li>
+
+</body>
+</html>
