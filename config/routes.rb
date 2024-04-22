@@ -6,6 +6,6 @@ end
 
 Rails.application.routes.draw do
 
-  get("/2/6", { :controller => "roll", :action => "roll" })
+  get("dice/:num_die/:num_sides", { :controller => "roll", :action => "roll" })
 
 end

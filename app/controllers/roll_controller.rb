@@ -2,10 +2,13 @@ class RollController < ApplicationController
 
   def roll
     
+    @num_die = params.fetch("num_die").to_i
+    @num_sides = params.fetch("num_sides").to_i
+
     @rolls = []
 
-    2.times do
-      die = rand(1..6)
+    @num_die.times do
+      die = rand(1..@num_sides)
 
       @rolls.push(die)
     end
@@ -14,5 +17,3 @@ class RollController < ApplicationController
     
   end 
 end
-
-
